@@ -1,0 +1,49 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 2px 0px black;
+    padding: 0px 10px;
+    height: 100px;
+}
+
+.log-out {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.logout-button {
+    background-color: rgb(5, 20, 115);
+    height: 40px;
+    width: 130px;
+    border-radius: 50px;
+    color: rgb(251, 251, 251);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.home-logo {
+    height: 100px;
+    width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .user-profile {
+        display: none;
+    }
+    .logout-button {
+        width: 110px;
+    }
+}

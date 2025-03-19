@@ -1,0 +1,26 @@
+.logo {
+    height: 150px;
+    width: 200px;
+}
+
+.logo-conatiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(186, 135, 75);
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.error-message {
+    color: rgb(216, 40, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}

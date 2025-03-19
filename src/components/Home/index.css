@@ -1,0 +1,46 @@
+.home-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 10%;
+}
+
+.home-heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(85, 5, 160);
+}
+
+.home-description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: rgb(53, 48, 52);
+}
+
+.shop-now-button {
+    background-color: rgb(5, 20, 115);
+    height: 45px;
+    width: 150px;
+    color: rgb(253, 254, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border-width: 0;
+    border-radius: 10px;
+}
+
+.home-img {
+    width: 50%;
+}
+
+@media screen and (max-width : 768px) {
+    .home-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-img {
+        margin: 20px;
+        width: 90%;
+        order: -1;
+    }
+}
