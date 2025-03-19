@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from "@mui/material";
+import CircularProgress from "@mui/material/CircularProgress";
 import Cookie from 'js-cookie'
 import NavBar from '../Navbar'
 import './index.css'
 
 const ProductList = () => {
     const [productList, setProductsList] = useState([])
+    const [showLoader, setShowLoader] = useState(true)
 
     useEffect(() => {
         const getData = async () => {
@@ -19,6 +21,7 @@ const ProductList = () => {
             }
             const data = await fetch('https://coding-assignment-server.vercel.app/products', payload)
             const response = await data.json()
+            setShowLoader(false)
             setProductsList(response)
         }
         getData()
@@ -27,6 +30,7 @@ const ProductList = () => {
     return (
         <div>
             <NavBar />
+            {showLoader && <div className='spinner-loader'> <CircularProgress /> </div>}
             <div className='products-container'>
                 {productList.data?.map((eachItem, index) => {
                     console.log(eachItem)
